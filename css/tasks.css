@@ -1,0 +1,21 @@
+.tasks {
+  background-color: white;
+  margin-top: 10px;
+}
+
+.tasks__header {
+  border-bottom: 2px solid #e8e8e8;
+  margin: 0;
+  padding: 20px;
+}
+
+@media (max-width: 767px) {
+  .tasks__header {
+    font-size: 20px;
+  }
+}
+
+.task__list {
+  padding: 20px;
+  margin-top: 25px;
+}

@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/tasks.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <script defer src="js/script.js"></script>
 </head>
@@ -17,8 +20,10 @@
         <h1 class="header">Lista zadań</h1>
         <form class="form js-form">
             <h2 class="form__header">Dodaj nowe zadanie</h2>
-            <input class="form__input js-form__input">
-            <button>Dodaj zadanie</button>
+            <div class="form__main-content">
+                <input class="form__input js-form__input" placeholder="Co jest do zrobienia?">
+                <button class="form__button">Dodaj zadanie</button>
+            </div>
         </form>
         <div class="tasks">
             <h2 class="tasks__header">Lista zadań</h2>
