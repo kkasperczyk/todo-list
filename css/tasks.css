@@ -1,6 +1,7 @@
 .tasks {
   background-color: white;
   margin-top: 10px;
+  width: 100%;
 }
 
 .tasks__header {
@@ -15,7 +16,39 @@
   }
 }
 
-.task__list {
+.tasks__list {
   padding: 20px;
   margin-top: 25px;
+  list-style-type: none;
+}
+
+.js-tasks__list-item {
+  padding: 10px;
+  border-bottom: 2px solid #e8e8e8;
+  display: flex;
+  align-items: center;
+}
+
+.js-done {
+  height: 30px;
+  width: 30px;
+  background-color: green;
+  border: none;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.js-taskContent {
+  flex-grow: 1;
+  flex-basis: auto;
+}
+
+.js-remove {
+  height: 30px;
+  width: 30px;
+  background-color: red;
+  border: none;
+  margin-left: 10px;
+  color: white;
+  flex-shrink: 0;
 }
