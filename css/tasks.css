@@ -34,13 +34,21 @@
   width: 30px;
   background-color: green;
   border: none;
-  margin-right: 10px;
+  color: green;
   flex-shrink: 0;
+}
+
+.js-done--ticked {
+  color: white;
 }
 
 .js-taskContent {
   flex-grow: 1;
-  flex-basis: auto;
+  margin: 0 10px;
+}
+
+.js-taskContent--done {
+  text-decoration: line-through;
 }
 
 .js-remove {
@@ -48,7 +56,6 @@
   width: 30px;
   background-color: red;
   border: none;
-  margin-left: 10px;
   color: white;
   flex-shrink: 0;
 }
