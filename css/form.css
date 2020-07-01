@@ -19,7 +19,7 @@
   display: flex;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 767px) {
   .form__main-content {
     flex-direction: column;
     flex-basis: 100%;
@@ -35,7 +35,7 @@
   border: 2px solid #e8e8e8;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 767px) {
   .form__input {
     width: 100%;
     max-width: unset;
@@ -54,7 +54,7 @@
   border: none;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 767px) {
   .form__button {
     margin-top: 10px;
     width: 100%;
