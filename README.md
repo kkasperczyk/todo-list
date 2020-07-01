@@ -11,7 +11,7 @@ This is a simple **to-do list** created as a part of a homework for *"YouCode - 
 ## HOW TO USE
 
 1. **Enter a task** you wish to add.
-2. **Add a task*** by clicking on the **Dodaj zadanie** button.
+2. **Add a task** by clicking on the **Dodaj zadanie** button.
 3. Added task will show up in the **tasks list** just below.
 4. You can add **multiple tasks**.
 5. Press the **green** button to **mark or deselect a task** as done.
