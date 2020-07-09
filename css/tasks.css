@@ -28,6 +28,10 @@
   align-items: center;
 }
 
+.js-tasks__list-item--hidden {
+  display: none;
+}
+
 .js-done {
   height: 30px;
   width: 30px;
