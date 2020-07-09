@@ -48,10 +48,16 @@
 
 .form__button {
   padding: 10px;
-  background-color: teal;
+  background-color: hsl(180, 100%, 25%);
   color: hsl(179, 58%, 88%);
   font-weight: 300;
   border: none;
+  transition: background-color 1s, transform 0.5s;
+}
+
+.form__button:hover {
+  transform: scale(1.2);
+  background-color: hsl(180, 100%, 35%);
 }
 
 @media (max-width: 767px) {

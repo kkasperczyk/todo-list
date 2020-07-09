@@ -3,18 +3,23 @@
     console.log("Hi all developers! Nice to see you here. Enjoy!");
   };
 
-  const tasks = [];
+  let tasks = [];
+  let hideDoneTasks = false;
 
   const addNewTask = (newTaskContent) => {
-    tasks.push({
-      content: newTaskContent,
-    });
+    tasks = [
+      ...tasks,
+      {content: newTaskContent},
+    ];
 
     render();
   };
 
   const removeTask = (taskIndex) => {
-    tasks.splice(taskIndex, 1);
+    tasks = [
+    ...tasks.slice(0, taskIndex),
+    ...tasks.slice(taskIndex + 1),
+    ]; 
 
     render();
   };
@@ -43,23 +48,33 @@
     });
   };
 
-  const render = () => {
+  const renderTasks = () => {
     let htmlString = "";
 
     for (task of tasks) {
       htmlString += `<li class="js-tasks__list-item">
-                        <button class="js-done ${
-                          task.done ? "js-done--ticked" : ""
-                        }">&#x2713</button>
-                        <span class="js-taskContent ${
-                          task.done ? "js-taskContent--done" : ""
-                        }">${task.content}</span>
-                        <button class="js-remove">&#x1F5D1</button>
+                        <button class="js-done ${task.done ? "js-done--ticked" : ""}">
+                          &#x2713
+                        </button>
+                        <span class="js-taskContent ${task.done ? "js-taskContent--done" : ""}">
+                          ${task.content}
+                        </span>
+                        <button class="js-remove">
+                          &#x1F5D1
+                        </button>
                     </li>
     `;
     }
 
     document.querySelector(".js-tasks__list").innerHTML = htmlString;
+  };
+
+  const renderButtons = () => {};
+
+  const render = () => {
+    renderTasks();
+
+    renderButtons();
 
     bindEvents();
   };
