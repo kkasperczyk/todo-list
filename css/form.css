@@ -52,11 +52,11 @@
   color: hsl(179, 58%, 88%);
   font-weight: 300;
   border: none;
-  transition: background-color 1s, transform 0.5s;
+  transition: background-color 1s, transform 0.3s;
 }
 
 .form__button:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   background-color: hsl(180, 100%, 35%);
 }
 
